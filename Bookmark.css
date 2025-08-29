@@ -1,0 +1,164 @@
+/* Popup Modal Styles */
+.popup-modal {
+  position: fixed; /* Independent of parent containers */
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 450px;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  z-index: 9999; /* Higher than Qlik visuals */
+  padding: 10px;
+  display: none; /* Hidden by default */
+}
+
+/* Popup Header */
+.popup-header {
+  display: flex;
+  color: #6610f2;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+.close-btn {
+  font-size: 25px;
+  color: #fd7e14;
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+/* Create Bookmark Section */
+.create-bookmark-section {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 15px;
+}
+
+#createBookmarkBtn {
+  padding: 6px 10px;
+  background-color: #28a745;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+#createBookmarkBtn:hover {
+  background-color: #218838;
+}
+
+#bookmarkNameInput {
+  flex-grow: 1;
+  padding: 6px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+/* Bookmark List */
+.popup-list {
+  max-height: 200px;
+  overflow-y: auto;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: 10px;
+  background-color: #f9f9f9;
+}
+
+.popup-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px;
+  font-size: 14px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.popup-item:hover {
+  background-color: #07a0f3;
+  color: #FFFFFF;
+}
+
+.delete-bookmark-btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.delete-bookmark-btn img {
+  width: 16px;
+  height: 16px;
+}
+
+#openPopupBtn{
+  color: #007bff;
+  background-color: #FFFFFF;
+  padding: 4px 6px;
+  font-size: 16px;
+
+}
+#createBookmarkBtn,
+#alertOkBtn,
+#promptOkBtn {
+    padding: 6px 10px;
+    background-color: #28a745;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+#createBookmarkBtn:hover,
+#alertOkBtn:hover,
+#promptOkBtn:hover {
+    background-color: #218838;
+}
+
+#promptInput {
+    width: 100%;
+    padding: 8px;
+    margin-top: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+.confirmation-modal {
+  position: fixed;
+  top: 55%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 400px;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  z-index: 10000;
+  padding: 20px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  text-align: center;
+}
+.confirmation-modal p {
+  font-size: 14px;
+  color: #333;
+  margin-bottom: 15px;
+}
+.confirmation-modal .popup-header span {
+  font-size: 16px;
+  font-weight: bold;
+  color: #333;
+}
+
+#confirmActionBtn{
+  color: #FFFFFF;
+  background-color: #28a745;
+  width: 35px;
+  height: 25px;
+  padding: 3px 1px;
+  margin:15px;
+}
+
